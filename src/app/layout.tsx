@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Providers from '@/components/Providers';
-import TopNav from '@/components/navbar/TopNav';
+import Providers from "@/components/Providers";
+import TopNav from "@/components/navbar/TopNav";
 
 export const metadata: Metadata = {
   title: "NextMatch",
@@ -19,9 +19,8 @@ export default function RootLayout({
         <Providers>
           <TopNav />
           <main className='container mx-auto p-10'>
-          {children}
+            {children}
           </main>
-          
         </Providers>
       </body>
     </html>
