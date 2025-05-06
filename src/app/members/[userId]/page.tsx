@@ -9,8 +9,6 @@ export default async function MemberDetailedPage({ params }
     
     const member = await getMemberByUserId(userId);
 
-    await new Promise(resolve => setTimeout(resolve, 5000));
-
     if (!member) return notFound();
 
     return (
